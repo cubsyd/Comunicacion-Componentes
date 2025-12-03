@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-ficha',
   imports: [],
   templateUrl: './ficha.html',
-  styleUrl: './ficha.scss',
+  styleUrls: ['./ficha.scss'],
 })
-export class Ficha {
-
-}
+export class FichaComponent {}

@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-sena',
   imports: [],
   templateUrl: './sena.html',
-  styleUrl: './sena.scss',
+  styleUrls: ['./sena.scss'],
 })
-export class Sena {
-
-}
+export class SenaComponent {}
