@@ -1,1 +1,9 @@
-<p>ficha works!</p>
+<section class="ficha-contenido">
+  <h1>Ficha {{ idFicha }}</h1>
+  <p *ngIf="idFicha === '3066474'">La mejor ficha del SENA prácticamente.</p>
+  <p *ngIf="idFicha === '3333333'">Otra fucha por ahi</p>
+
+  <p *ngIf="idFicha !== '3066474' && idFicha !== '3333333'">
+    Información de la ficha {{ idFicha }}.
+  </p>
+</section>

@@ -1,12 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-inicio',
-  imports: [],
+  standalone: true,
   templateUrl: './inicio.html',
-  styleUrl: './inicio.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./inicio.scss'],
 })
-export class Inicio {
-
-}
+export class InicioComponent {}

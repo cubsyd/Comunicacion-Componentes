@@ -1,12 +1,21 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { EstadoService, Vista } from '../servicios/estado';
 
 @Component({
   selector: 'app-barra-lateral',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './barra-lateral.html',
-  styleUrl: './barra-lateral.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./barra-lateral.scss'],
 })
-export class BarraLateral {
+export class BarraLateralComponent {
+  vistaActual: Vista = 'inicio';
 
+  constructor(private estadoService: EstadoService) {
+    this.estadoService.vista$.subscribe((vista) => {
+      this.vistaActual = vista;
+    });
+  }
 }

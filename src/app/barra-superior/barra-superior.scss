@@ -1,0 +1,58 @@
+.menu-vertical {
+  width: 80px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid #444;
+}
+
+.logo img {
+  width: 48px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.btn-icono {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-icono img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-icono.activo {
+  background-color: #ff0000;
+}
+
+.btn-icono:hover {
+  background-color: #333333;
+}
+
+.texto-html {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}

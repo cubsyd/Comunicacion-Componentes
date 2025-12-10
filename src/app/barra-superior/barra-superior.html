@@ -1,1 +1,31 @@
-<p>barra-superior works!</p>
+<nav class="menu-vertical">
+  <div class="logo">
+    <img src="/sena.png" alt="SENA" />
+  </div>
+
+  <div class="iconos">
+    <button
+      class="btn-icono"
+      (click)="seleccionar('inicio')"
+      [class.activo]="vistaActual === 'inicio'"
+    >
+      <img src="/home.png" alt="Home" />
+    </button>
+
+    <button
+      class="btn-icono"
+      (click)="seleccionar('busqueda')"
+      [class.activo]="vistaActual === 'busqueda'"
+    >
+      <img src="/search.png" alt="Search" />
+    </button>
+
+    <button
+      class="btn-icono"
+      (click)="seleccionar('html')"
+      [class.activo]="vistaActual === 'html'"
+    >
+      <img src="/html.png" alt="HTML" />
+    </button>
+  </div>
+</nav>

@@ -1,1 +1,30 @@
-<p>barra-lateral works!</p>
+<aside class="barra-lateral">
+  <div *ngIf="vistaActual === 'inicio'">
+    <h2>Home</h2>
+
+    <ul class="lista-opciones">
+      <li><a routerLink="/inicio">Sena presentation</a></li>
+      <li><a routerLink="/ficha/3066474">Ficha 3066474</a></li>
+      <li><a routerLink="/ficha/3333333">Ficha 3333333</a></li>
+      <li><a href="#">Cuarta opcion</a></li>
+    </ul>
+  </div>
+
+  <div *ngIf="vistaActual === 'busqueda'">
+    <h2>Search</h2>
+
+    <ul class="lista-opciones">
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Sexta opcion</a></li>
+    </ul>
+  </div>
+
+  <div *ngIf="vistaActual === 'html'">
+    <h2>HTML</h2>
+
+    <ul class="lista-opciones">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Octava opcion</a></li>
+    </ul>
+  </div>
+</aside>
